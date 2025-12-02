@@ -1,0 +1,198 @@
+.login-bg {
+    position: relative;
+    height: 100vh;
+    background: url("../../assets/background-login.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: var(--bg-hover);
+}
+
+.login-card {
+    height: 80%;
+    width: 80%;
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1em;
+    padding: 2em;
+}
+
+.card-info .title {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.card-info input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.card-info .submit {
+    width: 80%;
+    padding: 10px;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.card-info .submit:hover {
+    background-color: #e07b39;
+}
+
+.card-image img {
+    width: 100%;
+    opacity: 0.95;
+    object-position: top;
+    object-fit: cover;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-info .buttons-change {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.card-info .buttons-change button {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.card-info .buttons-change button img {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 1024px) {
+    .login-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-info .title {
+        font-size: 3rem;
+    }
+
+    .card-info input,
+    .card-info .submit {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .card-image img {
+        object-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+    }
+
+    .card-image {
+        display: none;
+    }
+
+    .card-info {
+        padding: 1.5em;
+    }
+
+    .card-info .title {
+        font-size: 2.5rem;
+    }
+
+    .card-info input,
+    .card-info .submit {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .card-info .buttons-change {
+        gap: 3em;
+    }
+
+    .card-info .buttons-change button img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-info {
+        padding: 1em;
+        gap: 0.8em;
+    }
+
+    .card-info .title {
+        font-size: 2rem;
+    }
+
+    .card-info input,
+    .card-info .submit {
+        width: 95%;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .card-info .buttons-change {
+        gap: 2em;
+    }
+
+    .card-info .buttons-change button img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card-info .title {
+        font-size: 1.6rem;
+    }
+
+    .card-info input,
+    .card-info .submit {
+        font-size: 0.85rem;
+    }
+
+    .card-info .buttons-change button img {
+        width: 32px;
+        height: 32px;
+    }
+}

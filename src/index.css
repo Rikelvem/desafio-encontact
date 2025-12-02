@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+    transition: 0.2s;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #fcfcfc;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #a9a9a9;
+}
+
+.app-content{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+:root {
+  /* FUNDOS */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fcfcfc;
+  --bg-hover: rgba(0, 0, 0, 0.05); /* Usando RGBA para um hover sutil no tema claro */
+
+  /* TEXTO E ÍCONES */
+  --text-primary: #393939;
+  --text-secondary: #666666;
+
+  /* CORES DE ÊNFASE/ALERTA */
+  --color-accent: #cf822a; /* Laranja/Marrom */
+  --color-danger: #d9534f; /* Vermelho (Sair) */
+}
+
+.dark {
+  /* FUNDOS (Cores Invertidas) */
+  --bg-primary: #393939;      /* Fundo principal escuro */
+  --bg-secondary: #666666;    /* Fundo de cards/elementos escuros */
+  --bg-hover: rgba(255, 255, 255, 0.1); /* Usando RGBA para um hover sutil no tema escuro */
+
+  /* TEXTO E ÍCONES (Cores Invertidas) */
+  --text-primary: #ffffff;
+  --text-secondary: #fcfcfc;
+
+  /* Cores de ênfase (Accent e Danger) geralmente não mudam */
+}

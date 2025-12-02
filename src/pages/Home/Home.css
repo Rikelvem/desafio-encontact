@@ -1,0 +1,263 @@
+.content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-content {
+    height: 100%;
+    min-width: 430px;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    transition: width 0.05s linear;
+
+}
+
+.top-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.top-left .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.top-left .cards button {
+    padding: 10px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.308);
+}
+
+.top-left .cards .btn-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.top-left .cards .btn-send {
+    background: #0d831c;
+    color: #fff;
+    padding: 20px 18px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.top-left .cards .btn-cancel {
+    background: #f0f0f0;
+    color: #191919;
+    padding: 10px 18px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.left-content hr, .right-content hr {
+    width: 100%;
+    border: 0.5px solid #e0e0e0;
+}
+
+.middle-left {
+    margin-top: 1rem;
+    text-align: start;
+    width: 100%;
+}
+
+.middle-left h2 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+
+.right-content {
+    flex: 1;
+    padding: 2em;
+    background-color: var(--bg-primary);
+}
+
+.resizer {
+    width: 6px;
+    cursor: col-resize;
+    background: #d0d0d0;
+    transition: 0.2s;
+}
+
+.resizer:hover {
+    background: #a2a2a2;
+}
+
+.right-content .top-right {
+    padding: 0px 20px;
+}
+
+.right-content .top-right input {
+    width: 80%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.right-content .filters {
+    margin: 30px 0px 10px 0px;
+    padding: 0px 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.right-content .filters input {
+    width: 50px;
+    height: 42px;
+}
+
+.right-content .filters button {
+    width: 10%;
+    padding: 10px;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1024px) {
+    .right-content .top-right input {
+        width: 95%;
+    }
+
+    .right-content .filters {
+        gap: 20px;
+    }
+
+    .right-content .filters button {
+        width: auto;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .left-content {
+        min-width: 320px !important;
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-content {
+        width: 100% !important;
+        min-width: unset;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 1.5em;
+    }
+
+    .resizer {
+        display: none;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .right-content .top-right input {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .right-content .filters {
+        padding: 0;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .right-content .filters button {
+        flex: 1;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .left-content .cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .top-left .cards button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .middle-left h2 {
+        font-size: 1.25rem;
+    }
+
+    .right-content .filters {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .right-content .filters button {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content {
+        padding: 1em;
+    }
+
+    .right-content {
+        padding: 1em;
+    }
+
+    .right-content .top-right input {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .right-content .filters button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top-left .cards button {
+        font-size: 0.9rem;
+    }
+
+    .middle-left h2 {
+        font-size: 1.1rem;
+    }
+
+    .right-content .filters button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}

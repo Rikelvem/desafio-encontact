@@ -1,0 +1,108 @@
+.itemlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+}
+
+.itemlist-loading,
+.itemlist-empty {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-primary);
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.item-card:hover {
+    background-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.owner-circle {
+  width: 46px;
+  height: 46px;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.texts .name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.texts .subject {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.users {
+  display: flex;
+  gap: 6px;
+}
+
+.user-circle {
+  width: 32px;
+  height: 32px;
+  background: var(--text-secondary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--bg-secondary);
+}
+
+.owner-checkbox,
+.user-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.item-card:hover {
+  background: var(--bg-secondary);
+}
+
+@media (max-width: 600px) {
+  .item-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .users {
+    margin-left: 60px;
+    flex-wrap: wrap;
+  }
+}

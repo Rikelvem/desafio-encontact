@@ -1,0 +1,14 @@
+{
+  "loginTitle": "Sign in to your account",
+  "username": "Username",
+  "password": "Password",
+  "loginButton": "Login",
+  "invalidCredentials": "Invalid username or password!",
+
+  "newEmail": "New Email",
+  "accountManagement": "Account Management",
+  "searchEmail": "Search an email...",
+  "assign": "Assign",
+  "archive": "Archive",
+  "schedule": "Schedule"
+}

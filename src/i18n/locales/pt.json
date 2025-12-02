@@ -1,0 +1,14 @@
+{
+  "loginTitle": "Entre na sua conta",
+  "username": "Usuário",
+  "password": "Senha",
+  "loginButton": "Entrar",
+  "invalidCredentials": "Usuário e/ou senha inválidos!",
+
+  "newEmail": "Novo E-mail",
+  "accountManagement": "Gerenciamento de contas",
+  "searchEmail": "Procure um e-mail...",
+  "assign": "Assinar",
+  "archive": "Arquivar",
+  "schedule": "Agendar"
+}
