@@ -209,7 +209,6 @@
     }
 
     .top-left .cards button {
-        width: 50%;
         font-size: 1rem;
         padding: 12px;
     }
@@ -222,6 +221,10 @@
 
     .top-left .cards .profile-card .profile-options-btn {
         width: 20%;
+    }
+
+    .profile-options-dropdown {
+        width: 100%;
     }
 
     .middle-left h2 {
